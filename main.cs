@@ -21,7 +21,8 @@ namespace HelloWorld
 
         static int Task FailCodeCheck(int customerId, string badCodeCanBeHere, int? maybeInt)
         {
-
+            int a=4;
+            
             var requestRoutingRule = $"SELECT * FROM routing.ProcessorRoutingRule where MerchantId={maybeInt}";
             var merchantProcessor = $"SELECT* FROM r3.MerchantProcessor where MerchantId = {maybeInt}" + badCodeCanBeHere;
 
